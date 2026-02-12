@@ -113,7 +113,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: 1px solid #f78900;
+            border: 1px solid #34c759;
         }
 
         #page-loader img {
@@ -140,7 +140,7 @@
         /* --- Page d'accueil --- */
         .top-marquee {
             background-color: var(--tertiary-bg-color);
-            color: #f78900;
+            color: #34c759;
             padding: 8px 0;
             overflow: hidden;
             font-weight: 500;
@@ -189,7 +189,7 @@
     transform: translate(-50%, -50%);
     height: 14vh;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 2px #f78900;
+    box-shadow: 0px 0px 10px 2px #34c759;
         }
 
         #page-home .cart-button {
@@ -205,7 +205,7 @@
             /* MODIFIÉ pour l'afficher */
             align-items: center;
             justify-content: center;
-            box-shadow: 0px 0px 10px 2px #f78900;
+            box-shadow: 0px 0px 10px 2px #34c759;
             display: none;
         }
 
@@ -337,7 +337,7 @@
             width: 100%;
             border-radius: 20px;
             text-align: center;
-            border: 1px solid #f78900;
+            border: 1px solid #34c759;
     background: linear-gradient(45deg, black, transparent);
         }
 
@@ -372,8 +372,8 @@
             overflow: hidden;
             cursor: pointer;
             position: relative;
-            border: 1px solid #f78900;
-    background: linear-gradient(#f80000, #f78900c7);
+            border: 2px solid #00c7be;
+    background: linear-gradient(#0a5fa1de, #34c759bf);
 
         }
 
@@ -464,22 +464,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: var(--hint-color);
             text-decoration: none;
             font-size: 0.7rem;
             background: #8080807d;
             border-radius: 20px;
-            /* height: 5vh; */
             width: 12vh;
-            color: #988a4a;
+            color: #00340d;
     padding: 1vh;
     border: none;
-    box-shadow: 0px 0px 10px 2px #f78900;
+    box-shadow: 0px 0px 10px 2px #34c759;
     cursor: pointer;
         }
 
         .nav-item.active {
-            color: #f78900;
+            color: #34c759;
             background-color: #000000d1;
         }
 
@@ -741,8 +739,8 @@
             display: flex;
             justify-content: center;
             border-radius: 20px;
-            border: 1px solid #f78900;
-    background: linear-gradient(#f8000078, #f78900c7);
+            border: 1px solid #34c759;
+    background: linear-gradient(#ff5200ad, #34c759c7);
             width: 90%;
             height: 4vh;
         }
@@ -836,6 +834,13 @@
             padding: 1vh;
         }
 
+        /* Cette classe ne s'applique que si le texte est trop long */
+.tarif-wieght.text-shrink {
+    font-size: 2vh !important; /* Force la réduction */
+    line-height: 1.1;           /* Resserre les lignes */
+    padding-bottom: 2px;        /* Évite de toucher la barre orange */
+}
+
 
         /* --- NOUVEAU STYLE POUR LA PAGE INFO --- */
         #page-info .page-content {
@@ -885,7 +890,7 @@
             margin-top: 2vh;
     height: 14vh;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 2px #f78900;
+    box-shadow: 0px 0px 10px 2px #34c759;
 
         }
 
@@ -1264,9 +1269,9 @@
     outline: none;
     width: 100%;
     padding: 20px;
-    background: linear-gradient(45deg, #ff0002 0%, #e8b264 80%, #005c30 100%, transparent);
+    background: linear-gradient(45deg, #34c759 0%, #a1dd0b 80%, #005c30 100%, transparent);
     background-size: 200% auto;
-    color: #ed9c27;
+    color: #413727;
     font-family: 'Impact', 'Copperplate', sans-serif;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -1342,7 +1347,7 @@
 /* --- STYLE SPÉCIAL PACKS PROMO --- */
 .product-card.promo-card {
     background: linear-gradient(135deg, #2c0e0e 0%, #5e1313 100%); /* Fond rouge sombre Noël */
-    border: 2px solid #f78900; /* Bordure rouge vif */
+    border: 2px solid #34c759; /* Bordure rouge vif */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

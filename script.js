@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const contactLinks = [
         {
             name: 'TELEGRAM PRINCIPAL 🥇',
-            url: 'https://t.me/+k4OTSjxCjyNjOWNk',
+            url: '',
             icon: '#icon-telegram',
             id: 'telegram-main',
             className: 'telegram-main', // Référence le CSS Bleu
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'POTATO PRINCIPAL 🥔',
-            url: 'https://duanym138.org/TERPSLAB33',
+            url: '',
             icon: '#icon-potato',
             id: 'potato-main',
             className: 'potato-main', // Référence le CSS Marron/Doré
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'PAGE INSTAGRAM 📸',
-            url: 'https://www.instagram.com/terps.lab?igsh=eGF6aTV2dTlrbGxi&utm_source=qr', // <--- Pense à mettre ton vrai lien Insta ici !
+            url: '', // <--- Pense à mettre ton vrai lien Insta ici !
             icon: '#icon-instagram',
             id: 'insta-main',
             className: 'insta-main', // Référence le CSS Sunset
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 
         {
             name: 'SNAPCHAT 👻',
-            url: 'https://snapchat.com/t/M9TLDs9L',
+            url: '',
             icon: '#icon-snapchat', // J'utilise l'icone signal car Luffa n'a pas d'icone dédiée
             id: 'snap-main',
             className: 'snap-main', // Référence le CSS Violet
@@ -53,338 +53,178 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- DONNÉES DE L'APPLICATION (NOUVELLE STRUCTURE) ---
     const appData = [
         // --- Catégorie 1: HASH ---
-        {
-            id: 'HASH',
-            name: '🍫 Hash 🍫',
-            farm: '',
-            type: 'Hash',
-            quality: ' 🍫 Hash 🍫',
-            image: 'CategHash.png', // Image de la catégorie
-
-            // La catégorie contient maintenant des "farms"
-            farms: [
-                {
-                    id: '🔮 Plasma Static 🔮',
-                    name: '🔮 Plasma Static 🔮',
-                    image: '', // Mets une image de farm si tu veux
-                    badgeText: '5 produits',
-                    products: [
-                        {
-                            id: 'ORANGE BLOOD 🤯',
-                            //  flag: '🇺🇸',
-                            name: 'ORANGE BLOOD 🤯',
-                            farm: 'FULLMELTFARM 🍶',
-                            promoEligible: true,
-                            type: 'Plasma',
-                            image: 'ProductPlasma1.jpg',
-                            video: 'VideoPlasma1.mov',
-                            description: 'PRODUIT SEC ET CASSANT ⭐️⭐️⭐️⭐️⭐️\n\n Odeur fruité suivi d’un goût orangé et d’une défonce assurer 🍊 ',
-                            tarifs: [
-                                { weight: '5g', price: 90.00 },
-                                { weight: '10g', price: 170.00 },
-                                { weight: '20g', price: 300.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
-                            ]
-                        },
-                        {
-                            id: 'FF X SD 🍇',
-                            //  flag: '🇺🇸',
-                            name: 'FF X SD 🍇',
-                            farm: 'FULLMELTFARM 🍶',
-                            promoEligible: true,
-                            type: 'Plasma',
-                            image: 'ProductPlasma2.jpg',
-                            video: 'VideoPlasma2.mov',
-                            description: 'PRODUIT SEC ET CASSANT ⭐️⭐️⭐️⭐️⭐️ \n\n Saveur framboiser suivie d’une odeur fruité et d’une défonce incroyable',
-                            tarifs: [
-                                { weight: '5g', price: 90.00 },
-                                { weight: '10g', price: 170.00 },
-                                { weight: '20g', price: 300.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
-                            ]
-                        }
-
-                    ]
-                },
-                {
-                    id: '💎 Fresh Frozen 💎',
-                    name: '💎 Fresh Frozen 💎',
-                    image: '', // Mets une image de farm si tu veux
-                    badgeText: '5 produits',
-                    products: [
-                        {
-                            id: 'ZOHWA 🍍',
-                            //  flag: '🇺🇸',
-                            name: 'ZOHWA 🍍',
-                            farm: 'FULLMELTFARM 🍶',
-                            promoEligible: true,
-                            type: 'Plasma',
-                            image: 'ProductFrozen2.jpg',
-                            video: 'VideoFrozen2.mov',
-                            description: 'PRODUIT SEC ET CASSANT ⭐️⭐️⭐️⭐️⭐️ \n\n Mélange de note de fruits exotiques avec un goût savoureux et d’une détente assurée',
-                            tarifs: [
-                                { weight: '5g', price: 80.00 },
-                                { weight: '10g', price: 140.00 },
-                                { weight: '20g', price: 220.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
-                            ]
-                        },
-                        {
-                            id: 'PAPAYA 🥭',
-                            //  flag: '🇺🇸',
-                            name: 'PAPAYA 🥭',
-                            farm: 'FULLMELTFARM 🍶',
-                            promoEligible: true,
-                            type: 'Plasma',
-                            image: 'ProductFrozen1.jpg',
-                            video: 'VideoFrozen1.mov',
-                            description: 'PRODUIT SEC ET CASSANT ⭐️⭐️⭐️⭐️⭐️ \n\n Goût fruitée suivi d’une odeur boisée et d’une défonce assurer',
-                            tarifs: [
-                                { weight: '5g', price: 80.00 },
-                                { weight: '10g', price: 140.00 },
-                                { weight: '20g', price: 220.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
-                            ]
-                        },
-                        {
-                            id: 'ORANGE GROOVIE 🍊',
-                            //  flag: '🇺🇸',
-                            name: 'ORANGE GROOVIE 🍊',
-                            farm: 'FULLMELTFARM 🍶',
-                            promoEligible: true,
-                            type: 'Plasma',
-                            image: 'ProductFrozen3.jpg',
-                            video: 'VideoFrozen3.mov',
-                            description: 'PRODUIT SEC ET CASSANT ⭐️⭐️⭐️⭐️⭐️ \n\n Odeur d’agrumes prononcé suivie d’un goût oranger et d’une défonce assurer',
-                            tarifs: [
-                                { weight: '5g', price: 80.00 },
-                                { weight: '10g', price: 140.00 },
-                                { weight: '20g', price: 220.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
+      {
+        id: 'HASH',
+        name: '🍫 Hash 🍫',
+        type: 'Hash',
+        quality: ' 🍫 Hash 🍫',
+        image: 'CategHash.png', 
+        // Suppression de "farms" pour mettre "products" en direct
+        products: [
+            {
+                id: 'CHOPPER_FARM',
+                name: 'CHOPPER FARM PLASMASTATIC 🧸🧸🧸',
+                farm: 'CHOPPER FARM',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductChop.png', // À adapter avec ton image
+                video: 'VideoChop.mp4', 
+                description: 'Qualité Plasma Static supérieure. Texture exceptionnelle et puissance maximale.',
+                tarifs: [
+                    { weight: '5g', price: 80.00 },
+                    { weight: '10g', price: 160.00 },
+                    { weight: '50g', price: 600.00 },
+                    { weight: '100g', price: 1200.00 },
+                ]
+            },
+            {
+                id: 'WITH_JIBILS',
+                name: 'With Jibils 160/120u 🚀⛰️🍋‍🟩',
+                farm: 'JIBILS',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductWith.png', // À adapter
+                video: 'VideoWith.mp4',
+                description: 'Notes de citron vert et fraise. Un 120u de haute montagne.',
+                tarifs: [
+                    { weight: '2.5g', price: 20.00 },
+                    { weight: '5g', price: 30.00 },
+                    { weight: '10g', price: 60.00 },
+                    { weight: '50g', price: 200.00 },
+                    { weight: '100g', price: 360.00 },
+                ]
+            },
+            {
+                id: 'JAUNE_BANANA',
+                name: 'Jaune banana skitelz 🍌🍌🍌',
+                farm: 'SKITELZ',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductMous.png', // À adapter
+                video: 'VideoMous.mp4',
+                description: 'Mousseux jaune ultra fruité. Goût banane Skitelz prononcé.',
+                tarifs: [
+                    { weight: '3.5g', price: 20.00 },
+                    { weight: '10g', price: 40.00 },
+                    { weight: '50g', price: 150.00 },
+                    { weight: '100g', price: 280.00 },
+                ]
+            },
+            {
+                id: 'CALIMOUSSE_RUNTZ',
+                name: 'Calimousse runtz 🇺🇸🇺🇸🇺🇸',
+                farm: 'HASH CALIFORNIEN',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductCaliM.png', // À adapter
+                video: 'VideoCaliM.mp4',
+                description: 'Le célèbre Hash Californien. Texture crémeuse et terpènes Runtz.',
+                tarifs: [
+                    { weight: '2g', price: 20.00 },
+                    { weight: '5g', price: 40.00 },
+                    { weight: '10g', price: 80.00 },
+                ]
+            }
+        ]
+    },
 
         // --- Catégorie 2: BEUH ---
-        {
-            id: 'WEED',
-            name: ' 🕯 Weed 🕯',
-            type: 'Weed',
-            image: 'CategWeed.png', 
-            // On supprime le tableau "farms" et on met "products" direct ici
-            products: [
-                {
-                    id: 'PAPAYA_CHERRY_GELATO',
-                    name: 'PAPAYA x CHERRY GELATO 🍒 🥭',
-                    farm: 'CALI NO BRAND ™️©️',
-                    promoEligible: true,
-                    type: 'Weed',
-                    image: 'ProductGush.jpg',
-                    video: 'VideoGush.mp4',
-                    description: 'Le mariage de la Papaye et de la Cerise Gelato. Très fruité. \n\n 🍒 LA FOLIE 🤪 ‼️ Goût intense et buds magnifiques.',
-                    tarifs: [
-                        { weight: '5g', price: 70.00 },
-                        { weight: '10g', price: 120.00 },
-                        { weight: '25g', price: 220.00 },
-                        { weight: '50g', price: 420.00 },
-                        { weight: '100g', price: 800.00 },
-                    ]
-                }   
-            ]
-        },
-        // --- Catégorie 3:      Extraction
-
-        /*  {
-             id: 'Extraction',
-             name: '⛏️ Extraction ⛏️',
-             farm: '',
-             type: 'Extraction',
-             quality: '⛏️ Extraction ⛏️',
-             image: 'CategExtraction.jpg',
- 
-             farms: [
-                 {
-                 id: 'VAPE',
-                     name: '😶‍🌫️ VAPE 😶‍🌫️',
-                     image: 'CategHash.png', 
-                     badgeText: '0 produits',
-                     clickable: true,  
-                     products: [
- 
-                         {
-                             id: 'VAPE THC',
-                             // flag: '🇺🇸',
-                             name: 'VAPE THC 💨',
-                             farm: 'JUNGLE BOYS 🇺🇸 & DABWOODS 🇺🇸',
-                             promoEligible: true,
-                             type: 'Vape',
-                             image: 'ProductVape.jpg',
-                             video: 'ProductVape.jpg',
-                             description: '🎯 Pur à 87%-95%THC  | Delta-9 \n ⚡ Effet ultra rapide & intense \n 💎 Qualité distillat premium • Sans coupe',
-                             useSmallText: true,
-                             tarifs: [
-                                 { weight: '1 VAPE 🍃', price: 60.00 },
-                                 { weight: '3 VAPE 🍃', price: 150.00 },
-                                 { weight: '10 VAPE 🍃', price: 450.00 },
-                             ]
-                         }
-                     ]
-                 },
-                 {
-                     id: 'SERINGUE WAX',
-                         name: '💉 SERINGUE WAX 💉',
-                         image: 'CategHash.png', 
-                         badgeText: '0 produits',
-                         clickable: true,  
-                         products: [
-     
-                             {
-                                 id: 'SERINGUE THC',
-                                 // flag: '🇺🇸',
-                                 name: 'SERINGUE THC 💨',
-                                 farm: 'DELTA CORP ®️ 🇺🇸',
-                                 promoEligible: true,
-                                 type: 'Vape',
-                                 image: 'ProductSer.png',
-                                 images: [
-                                     'ProductSer1.jpg',  // Photo 1
-                                     'ProductSer2.jpg', // Photo 2 (Assure-toi d'avoir uploadé ce fichier !)
-                                     'ProductSer3.jpg',  // Photo 3 (Assure-toi d'avoir uploadé ce fichier !)
-                                     'ProductSer4.jpg', // Photo 2 (Assure-toi d'avoir uploadé ce fichier !)
-                                     'ProductSer5.jpg'  // Photo 3 (Assure-toi d'avoir uploadé ce fichier !)
- 
-                                 ],
-                             
-                                 video: '', // Pas de vidéo pour celui-là
-                                 description: '🎯 Pur à 91%THC  | THC \n ⚡ Effet ultra rapide & intense \n 💎 Qualité distillat premium • Sans coupe \n\n ℹ️ A mettre au tour du join ou meme dedans ℹ️',
-                                 tarifs: [
-                                     { weight: '1 💉', price: 60.00 },
-                                     { weight: '3 💉 ', price: 150.00 },
-                                     { weight: '10 💉', price: 450.00 },
-                                 ]
-                             }
-                         ]
-                     }
-             ]
-         }, 
-
-        // PACK NOEL 
-
-
-        {
-            id: 'PACKDENOEL',
-            name: '🎅🏽 PACKDENOEL 🎅🏽',
-            farm: '',
-            type: 'PACKDENOEL',
-            quality: '🎅🏽 PACKDENOEL 🎅🏽',
-            image: 'CategNoel.jpg',
-
-            farms: [
-                {
-                    id: 'PACKBRONZE',
-                    name: '🥉 PACK BRONZE 🥉',
-                    image: 'CategHash.png',
-                    badgeText: '0 produits',
-                    clickable: true,
-                    products: [
-
-                        {
-                            id: 'PromoBronze',
-                            name: '🎁 10G DE 120u / 10G D’AMNESIA HAZE 🎁',
-                            farm: '🎄 Spécial Noël',
-                            promoEligible: true,
-                            type: 'Promo', // Important pour le CSS
-                            image: '', // Pas besoin d'image
-                            video: '',
-                            description: '',
-                            clickable: true, // On met à TRUE pour que le curseur change
-                            tarifs: [
-                                { weight: 'Pack', price: 120.00 },
-                            ]
-                        }
-                    ]
-                },
-                {
-                    id: 'PACK ARGENTÉ',
-                    name: '🥈 PACK ARGENTÉ 🥈',
-                    image: 'CategHash.png',
-                    badgeText: '0 produits',
-                    clickable: true,
-                    products: [
-
-                        {
-                            id: 'PromoArgente',
-                            name: '🎁 10G DE 90u/ 5G DE DOUBLE STATIC/ 10G D’AMNESIA HAZE 🎁',
-                            farm: '🎄 Spécial Noël',
-                            promoEligible: true,
-                            type: 'Promo', // Important pour le CSS
-                            image: '', // Pas besoin d'image
-                            video: '',
-                            description: '',
-                            clickable: true, // On met à TRUE pour que le curseur change
-                            tarifs: [
-                                { weight: 'Pack', price: 180.00 },
-                            ]
-                        }
-                    ]
-                },
-                {
-                    id: 'PACK OR',
-                    name: '🥇 PACK OR 🥇',
-                    image: 'CategHash.png',
-                    badgeText: '0 produits',
-                    clickable: true,
-                    products: [
-
-                        {
-                            id: 'PromoArgPromoOrente',
-                            name: '🎁 10G DE FROZEN/ 3.5G DE PARLAY/ 10G DE DOUBLE STATIC  🎁',
-                            farm: '🎄 Spécial Noël',
-                            promoEligible: true,
-                            type: 'Promo', // Important pour le CSS
-                            image: '', // Pas besoin d'image
-                            video: '',
-                            description: '',
-                            clickable: true, // On met à TRUE pour que le curseur change
-                            tarifs: [
-                                { weight: 'Pack', price: 280.00 },
-                            ]
-                        }
-                    ]
-                },
-                {
-                    id: 'PACK DIAMANT',
-                    name: '💎 PACK DIAMANT 💎',
-                    image: 'CategHash.png',
-                    badgeText: '0 produits',
-                    clickable: true,
-                    products: [
-                        {
-                            id: 'PromoDiamant',
-                            name: '🎁 10G DE DOUBLE STATIC/ 25 DE FROZEN/ 7G DE PARLAY/ 1 SERINGUE WAX  🎁',
-                            farm: '🎄 Spécial Noël',
-                            promoEligible: true,
-                            type: 'Promo', // Important pour le CSS
-                            image: '', // Pas besoin d'image
-                            video: '',
-                            description: '',
-                            clickable: true, // On met à TRUE pour que le curseur change
-                            tarifs: [
-                                { weight: 'Pack', price: 450.00 },
-                            ]
-                        }
-                    ]
-                }
-            ]
-        } */
+     // --- Catégorie 2: WEED ---
+     {
+        id: 'WEED',
+        name: ' 🕯 Weed 🕯',
+        type: 'Weed',
+        image: 'CategWeed.png', 
+        // On utilise "farms" pour créer les boutons de sous-catégories
+        farms: [
+            {
+                id: 'SPALI',
+                name: 'Spali 🇪🇸',
+                image: '', 
+                badgeText: '1 produit',
+                products: [
+                    {
+                        id: 'GELATO_44',
+                        name: 'Gelatot 44 🌪️🪵⛰️💨',
+                        farm: 'SPALI 🇪🇸',
+                        promoEligible: true,
+                        type: 'Weed',
+                        image: 'ProductGelato.png', // À adapter
+                        video: 'VideoGelato.mp4',
+                        description: 'Un classique espagnol. Profil boisé et terreux avec une défonce puissante.',
+                        tarifs: [
+                            { weight: '2g', price: 20.00 },
+                            { weight: '5g', price: 50.00 },
+                            { weight: '10g', price: 90.00 },
+                            { weight: '50g', price: 320.00 },
+                            { weight: '100g', price: 590.00 },
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'CALI_US',
+                name: 'Cali us 🇺🇸',
+                image: '',
+                badgeText: '2 produits',
+                products: [
+                    {
+                        id: 'LONDON_POUND_CAKE',
+                        name: 'London pound cake 🧁🍪🍩',
+                        farm: 'CALI US 🇺🇸',
+                        promoEligible: true,
+                        type: 'Weed',
+                        image: 'ProductLondon.png', // À adapter
+                        video: 'VideoLondon.mp4',
+                        description: 'Saveurs de pâtisserie et de sucre. Qualité californienne certifiée.',
+                        tarifs: [
+                            { weight: '1 bag (3.5g)', price: 50.00 },
+                            { weight: '3 bags', price: 140.00 },
+                        ]
+                    },
+                    {
+                        id: 'SUPER_BOOF',
+                        name: 'Super boof ⛽️🛸🚀',
+                        farm: 'CALI US 🇺🇸',
+                        promoEligible: true,
+                        type: 'Weed',
+                        image: 'ProductBoof.png', // À adapter
+                        video: 'VideoBoof.mp4',
+                        description: 'Gros profil gazzy. Une montée fulgurante.',
+                        tarifs: [
+                            { weight: '1 bag (3.5g)', price: 50.00 },
+                            { weight: '3 bags', price: 140.00 },
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 'CANADIENNE',
+                name: 'Canadienne 🇨🇦',
+                image: '',
+                badgeText: '1 produit',
+                products: [
+                    {
+                        id: 'VERRY_BERRY',
+                        name: 'Verry berry 🍋‍🟩🍓🍉',
+                        farm: 'CANADIENNE 🇨🇦',
+                        promoEligible: true,
+                        type: 'Weed',
+                        image: 'ProductBerry.png', // À adapter
+                        video: 'VideoBerry.mp4',
+                        description: 'Mélange de fruits rouges et d\'agrumes. Très aromatique.',
+                        tarifs: [
+                            { weight: '1 bag (3.5g)', price: 40.00 },
+                            { weight: '3 bags', price: 110.00 },
+                            { weight: '50g', price: 420.00 },
+                            { weight: '100g', price: 800.00 },
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+        
     ];
 
     // --- VARIABLES D'ÉTAT ---
@@ -621,7 +461,7 @@ function getProductById(productId) {
             backButton.className = 'back-to-categories-btn';
             backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
             backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); 
-            border-bottom: 2px solid #f78900;
+            border-bottom: 2px solid #34C768;
             border-top: none;
             border-left: none;
             border-right: none;
@@ -713,7 +553,7 @@ function getProductById(productId) {
         // Application du style visuel
         backButton.style.cssText = `
             background: linear-gradient(180deg, black, transparent); 
-            border-bottom: 2px solid #f78900; 
+            border-bottom: 2px solid #34C768; 
             border-top: none; border-left: none; border-right: none;
             color: white; padding: 10px 15px; 
             border-radius: 10px; font-size: 1.1rem; 
@@ -802,20 +642,22 @@ function getProductById(productId) {
         const detailsContainer = document.getElementById('product-details-content');
 
         // --- GESTION DES TARIFS ---
-        // (On garde ta logique pour le petit texte)
-        const weightStyle = product.useSmallText ? 'font-size: 12px; line-height: 1.2;' : '';
-
-        let tarifsHTML = product.tarifs.map(tarif => `
-    <div class="tarif-item">
-        <div class="box-tarif">
-            <div class="tarif-wieght" style="${weightStyle}">${tarif.weight}</div>
-            <div class="tarif-price">${tarif.price.toFixed(2)}€</div>
-        </div>
-        <button class="add-to-cart-btn" data-product-id="${product.id}" data-weight="${tarif.weight}" data-price="${tarif.price}">
-            <svg width="20" height="20"><use href="#icon-cart"/></svg>
-        </button>
-    </div>
-    `).join('');
+        let tarifsHTML = product.tarifs.map(tarif => {
+            // Si le texte fait plus de 10 caractères, on ajoute la classe 'text-shrink'
+            const shrinkClass = tarif.weight.length > 10 ? 'text-shrink' : '';
+        
+            return `
+            <div class="tarif-item">
+                <div class="box-tarif">
+                    <div class="tarif-wieght ${shrinkClass}">${tarif.weight}</div>
+                    <div class="tarif-price">${tarif.price.toFixed(2)}€</div>
+                </div>
+                <button class="add-to-cart-btn" data-product-id="${product.id}" data-weight="${tarif.weight}" data-price="${tarif.price}">
+                    <svg width="20" height="20"><use href="#icon-cart"/></svg>
+                </button>
+            </div>
+            `;
+        }).join('');
 
         let descriptionHTML = '';
         if (product.description) {
