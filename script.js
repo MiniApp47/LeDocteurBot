@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     { weight: '100g', price: 520.00 },
                 ]
             },
-            {
+           /*  {
                 id: 'CHOPPER_FARM',
                 name: 'CHOPPER FARM PLASMASTATIC 🧸🧸🧸',
                 farm: 'CHOPPER FARM 🧸',
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     { weight: '5g', price: 40.00 },
                     { weight: '10g', price: 80.00 },
                 ]
-            }
+            } */
         ]
     },
 
