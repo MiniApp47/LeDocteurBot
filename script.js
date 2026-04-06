@@ -10,23 +10,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const contactLinks = [
         {
             name: 'TELEGRAM PRINCIPAL 🥇',
-            url: '',
+            url: 'https://t.me/ledocteur2026',
             icon: '#icon-telegram',
             id: 'telegram-main',
             className: 'telegram-main', // Référence le CSS Bleu
             text: "TELEGRAM PRINCIPAL 🥇"
         },
-        {
+      /*   {
             name: 'POTATO PRINCIPAL 🥔',
             url: '',
             icon: '#icon-potato',
             id: 'potato-main',
             className: 'potato-main', // Référence le CSS Marron/Doré
             text: "POTATO PRINCIPAL 🥔"
-        },
+        }, */
         {
             name: 'PAGE INSTAGRAM 📸',
-            url: '', // <--- Pense à mettre ton vrai lien Insta ici !
+            url: 'https://www.instagram.com/le_doc_est?igsh=MThqa3NkdHEycDBrZw==', // <--- Pense à mettre ton vrai lien Insta ici !
             icon: '#icon-instagram',
             id: 'insta-main',
             className: 'insta-main', // Référence le CSS Sunset
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 
         {
             name: 'SNAPCHAT 👻',
-            url: '',
+            url: 'https://www.snapchat.com/add/le-docteur2026?share_id=TPkfCfm3zJc&locale=fr-FR',
             icon: '#icon-snapchat', // J'utilise l'icone signal car Luffa n'a pas d'icone dédiée
             id: 'snap-main',
             className: 'snap-main', // Référence le CSS Violet
@@ -62,9 +62,109 @@ document.addEventListener('DOMContentLoaded', function () {
         // Suppression de "farms" pour mettre "products" en direct
         products: [
             {
+                id: 'Jaune Mousseux 🚀',
+                name: 'Jaune Mousseux 🚀',
+                farm: '',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductJM.png', // À adapter avec ton image
+                video: 'VideoJM.mp4', 
+                description: '',
+                tarifs: [
+                    { weight: '4g', price: 20.00 },
+                    { weight: '10g', price: 40.00 },
+                    { weight: '50g', price: 140.00 },
+                    { weight: '100g', price: 260.00 },
+                ]
+            },
+            {
+                id: '45u',
+                name: '45u 🔬',
+                farm: 'Kgf ⚖️',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'Product45.png', // À adapter avec ton image
+                video: 'Video45.mp4', 
+                description: '',
+                tarifs: [
+                    { weight: '2g', price: 20.00 },
+                    { weight: '5g', price: 40.00 },
+                    { weight: '10g', price: 80.00 },
+                    { weight: '50g', price: 270.00 },
+                    { weight: '100g', price: 530.00 },
+                ]
+            },
+            {
+                id: 'tutti frutti',
+                name: 'Tutti Frutti 🍇',
+                farm: 'Kgf ⚖️',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductTu.png', // À adapter avec ton image
+                video: 'VideoTu.mp4', 
+                description: 'frozen 73u blackgenetique',
+                tarifs: [
+                    { weight: '2g', price: 20.00 },
+                    { weight: '5g', price: 40.00 },
+                    { weight: '10g', price: 80.00 },
+                    { weight: '50g', price: 270.00 },
+                    { weight: '100g', price: 530.00 },
+                ]
+            },
+            {
+                id: 'acai cake',
+                name: 'Acai Cake 🍰',
+                farm: 'Kgf ⚖️',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductAcai.png', // À adapter avec ton image
+                video: 'VideoAcai.mp4', 
+                description: 'frozen 73u blackgenetique',
+                tarifs: [
+                    { weight: '2g', price: 20.00 },
+                    { weight: '5g', price: 40.00 },
+                    { weight: '10g', price: 80.00 },
+                    { weight: '50g', price: 270.00 },
+                    { weight: '100g', price: 530.00 },
+                ]
+            },
+            {
+                id: 'PLASMASTATIC',
+                name: ' PLASMASTATIC ',
+                farm: 'CHOPPER FARM 🧸',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductChop1.png', // À adapter avec ton image
+                video: 'VideoChop1.mp4', 
+                description: 'Forbidden , Black cherry , Cherry mango',
+                tarifs: [
+                    { weight: '5g', price: 70.00 },
+                    { weight: '10g', price: 140.00 },
+                    { weight: '50g', price: 500.00 },
+                    { weight: '100g', price: 1000.00 },
+                ]
+            },
+            {
+                id: 'bruce banner',
+                name: 'Bruce Banner 🦹🏻‍♂️',
+                farm: '👨‍🌾 In the West farmz',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductBru.png', // À adapter avec ton image
+                video: 'VideoBru.mp4', 
+                description: 'Qualité Plasma Static supérieure. Texture exceptionnelle et puissance maximale.',
+                tarifs: [
+                    { weight: '2g', price: 20.00 },
+                    { weight: '5g', price: 40.00 },
+                    { weight: '10g', price: 80.00 },
+                    { weight: '50g', price: 270.00 },
+                    { weight: '100g', price: 520.00 },
+                ]
+            },
+            {
                 id: 'CHOPPER_FARM',
                 name: 'CHOPPER FARM PLASMASTATIC 🧸🧸🧸',
-                farm: 'CHOPPER FARM',
+                farm: 'CHOPPER FARM 🧸',
                 promoEligible: true,
                 type: 'Hash',
                 image: 'ProductChop.png', // À adapter avec ton image
@@ -144,6 +244,40 @@ document.addEventListener('DOMContentLoaded', function () {
                 badgeText: '1 produit',
                 products: [
                     {
+                        id: 'Rs11',
+                        name: 'Rs11 🥃',
+                        farm: 'SPALI 🇪🇸',
+                        promoEligible: true,
+                        type: 'Weed',
+                        image: 'ProductRs.png', // À adapter
+                        video: 'VideoRs.mp4',
+                        description: 'Cali midel self.',
+                        tarifs: [
+                            { weight: '2g', price: 20.00 },
+                            { weight: '5g', price: 50.00 },
+                            { weight: '10g', price: 90.00 },
+                            { weight: '50g', price: 300.00 },
+                            { weight: '100g', price: 590.00 },
+                        ]
+                    },
+                    {
+                        id: 'vice city',
+                        name: 'Vice City 😈',
+                        farm: 'SPALI 🇪🇸',
+                        promoEligible: true,
+                        type: 'Weed',
+                        image: 'ProductVice.png', // À adapter
+                        video: 'VideoVice.mp4',
+                        description: 'Cali midel self.',
+                        tarifs: [
+                            { weight: '2g', price: 20.00 },
+                            { weight: '5g', price: 50.00 },
+                            { weight: '10g', price: 90.00 },
+                            { weight: '50g', price: 300.00 },
+                            { weight: '100g', price: 590.00 },
+                        ]
+                    },
+                  /*   {
                         id: 'GELATO_44',
                         name: 'Gelatot 44 🌪️🪵⛰️💨',
                         farm: 'SPALI 🇪🇸',
@@ -159,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             { weight: '50g', price: 320.00 },
                             { weight: '100g', price: 590.00 },
                         ]
-                    }
+                    } */
                 ]
             },
             {
