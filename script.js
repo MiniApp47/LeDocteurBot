@@ -87,11 +87,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 video: 'Video45.mp4', 
                 description: '',
                 tarifs: [
-                    { weight: '2g', price: 20.00 },
-                    { weight: '5g', price: 40.00 },
-                    { weight: '10g', price: 80.00 },
-                    { weight: '50g', price: 270.00 },
-                    { weight: '100g', price: 530.00 },
+                    { weight: '2.5g', price: 20.00 },
+                    { weight: '5g', price: 30.00 },
+                    { weight: '10g', price: 60.00 },
+                    { weight: '50g', price: 200.00 },
+                    { weight: '100g', price: 370.00 },
                 ]
             },
             {
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 type: 'Hash',
                 image: 'ProductBru.png', // À adapter avec ton image
                 video: 'VideoBru.mp4', 
-                description: 'Qualité Plasma Static supérieure. Texture exceptionnelle et puissance maximale.',
+                description: 'La crème des crème de dry haute qualité.',
                 tarifs: [
                     { weight: '2g', price: 20.00 },
                     { weight: '5g', price: 40.00 },
