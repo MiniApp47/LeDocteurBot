@@ -244,6 +244,23 @@ document.addEventListener('DOMContentLoaded', function () {
                 badgeText: '1 produit',
                 products: [
                     {
+                        id: 'Amnesia',
+                        name: 'Amnesia 🌺',
+                        farm: 'SPALI 🇪🇸',
+                        promoEligible: true,
+                        type: 'Weed',
+                        image: 'ProductAM.png', // À adapter
+                        video: 'VideoAM.mp4',
+                        description: 'Cali midel self.',
+                        tarifs: [
+                            { weight: '2g', price: 20.00 },
+                            { weight: '5g', price: 40.00 },
+                            { weight: '10g', price: 70.00 },
+                            { weight: '50g', price: 270.00 },
+                            { weight: '100g', price: 450.00 },
+                        ]
+                    },
+                    {
                         id: 'Rs11',
                         name: 'Rs11 🥃',
                         farm: 'SPALI 🇪🇸',
