@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, */
         {
             name: 'PAGE INSTAGRAM 📸',
-            url: 'https://www.instagram.com/le_doc_est?igsh=MThqa3NkdHEycDBrZw==', // <--- Pense à mettre ton vrai lien Insta ici !
+            url: 'https://www.instagram.com/le_docteur_68_67?igsh=MXU4a2tvbzc4eGd1aQ%3D%3D&utm_source=qr', // <--- Pense à mettre ton vrai lien Insta ici !
             icon: '#icon-instagram',
             id: 'insta-main',
             className: 'insta-main', // Référence le CSS Sunset
