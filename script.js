@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
         image: 'CategHash.png', 
         // Suppression de "farms" pour mettre "products" en direct
         products: [
-            {
+          /*   {
                 id: 'Jaune Mousseux 🚀',
                 name: 'Jaune Mousseux 🚀',
                 farm: '',
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     { weight: '50g', price: 140.00 },
                     { weight: '100g', price: 260.00 },
                 ]
-            },
+            }, */
             {
                 id: '45u',
                 name: '45u 🔬',
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     { weight: '100g', price: 370.00 },
                 ]
             },
-            {
+          /*   {
                 id: 'tutti frutti',
                 name: 'Tutti Frutti 🍇',
                 farm: 'Kgf ⚖️',
@@ -110,8 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     { weight: '50g', price: 270.00 },
                     { weight: '100g', price: 530.00 },
                 ]
-            },
-            {
+            }, */
+           /*  {
                 id: 'acai cake',
                 name: 'Acai Cake 🍰',
                 farm: 'Kgf ⚖️',
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     { weight: '50g', price: 270.00 },
                     { weight: '100g', price: 530.00 },
                 ]
-            },
+            }, */
             {
                 id: 'PLASMASTATIC',
                 name: ' PLASMASTATIC ',
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     { weight: '100g', price: 1000.00 },
                 ]
             },
-            {
+            /* {
                 id: 'bruce banner',
                 name: 'Bruce Banner 🦹🏻‍♂️',
                 farm: '👨‍🌾 In the West farmz',
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     { weight: '50g', price: 270.00 },
                     { weight: '100g', price: 520.00 },
                 ]
-            },
+            }, */
            /*  {
                 id: 'CHOPPER_FARM',
                 name: 'CHOPPER FARM PLASMASTATIC 🧸🧸🧸',
@@ -349,7 +349,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 ]
             },
-            {
+           /*  {
                 id: 'CANADIENNE',
                 name: 'Canadienne 🇨🇦',
                 image: '',
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         ]
                     }
                 ]
-            }
+            } */
         ]
     },
         
