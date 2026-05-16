@@ -61,6 +61,38 @@ document.addEventListener('DOMContentLoaded', function () {
         image: 'CategHash.png', 
         // Suppression de "farms" pour mettre "products" en direct
         products: [
+             {
+                id: 'Tangie punch 🥊',
+                name: 'Tangie punch 🥊',
+                farm: '⚜️ GOLDEN FARMZ',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductTP.png', // À adapter avec ton image
+                video: 'VideoTP.mp4', 
+                description: 'Static sift, Plusieurs autre strain de disponible.',
+                tarifs: [
+                    { weight: '5g', price: 60.00 },
+                    { weight: '10g', price: 110.00 },
+                    { weight: '50g', price: 400.00 },
+                    { weight: '100g', price: 800.00 },
+                ]
+            },
+             {
+                id: 'Tropicana 🏝️',
+                name: 'Tropicana 🏝️',
+                farm: '🌞 Calimousse 🌞',
+                promoEligible: true,
+                type: 'Hash',
+                image: 'ProductTR.png', // À adapter avec ton image
+                video: 'VideoTR.mp4', 
+                description: '',
+                tarifs: [
+                    { weight: '5g', price: 30.00 },
+                    { weight: '10g', price: 60.00 },
+                    { weight: '50g', price: 170.00 },
+                    { weight: '100g', price: 330.00 },
+                ]
+            },
           /*   {
                 id: 'Jaune Mousseux 🚀',
                 name: 'Jaune Mousseux 🚀',
